@@ -1,0 +1,11 @@
+version: '2'
+services:
+  postgres:
+    image: "postgres"
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=aoc
+      - POSTGRES_USER=aoc
+      - POSTGRES_PASS=aoc
+      - POSTGRES_HOST_AUTH_METHOD=trust
